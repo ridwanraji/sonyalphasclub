@@ -1,11 +1,22 @@
 <template>
-  <v-container fluid>
-    <v-slide-y-transition mode="out-in">
-      <v-layout column align-center>
-      </v-layout>
-    </v-slide-y-transition>
-  </v-container>
+<v-jumbotron
+    :gradient="gradient"
+    :src= "require('@/assets/HomeBg.png')"
+    height="80%"
+    dark
+  >
+  </v-jumbotron>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      gradient: 'to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)'
+    }
+  }
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
